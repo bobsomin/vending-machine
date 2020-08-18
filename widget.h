@@ -14,7 +14,7 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
-    void change_money(int);
+    void exchange(int);
     void deactivate_buttons();
 
 
@@ -29,10 +29,14 @@ private slots:
 
     void on_pb_return_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_RandomButton_clicked();
+
 private:
     Ui::Widget *ui;
     int money {0};
 
 };
 
-#endif 
+#endif
